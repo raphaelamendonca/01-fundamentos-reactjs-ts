@@ -4,7 +4,7 @@
 
 # Ignite Feed
 
-O Ignite Feed é um projeto da trilha ReactJS do curso da [@Rocketseat](https://www.rocketseat.com.br/) desenvolvido no primeiro módulo do curso, chamado "Fundamentos do ReactJS". O objetivo deste projeto é, portanto, apresentar os principais conceitos do ReactJS e colocá-los em ação numa aplicação que simula o feed de uma rede social.
+O [Ignite Feed](https://01-fundamentos-reactjs-ts-raphaelamendonca.vercel.app/) é um projeto da trilha ReactJS do curso da [@Rocketseat](https://www.rocketseat.com.br/) desenvolvido no primeiro módulo do curso, chamado "Fundamentos do ReactJS". O objetivo deste projeto é, portanto, apresentar os principais conceitos do ReactJS e colocá-los em ação numa aplicação que simula o feed de uma rede social.
 
 👉🏻 O desenvolvimento desta aplicação foi feito conforme acompanhamento das aulas do curso ministradas pelo professor [Diego Fernandes](https://github.com/diego3g). O repositório do projeto "original" se encontra [aqui](https://github.com/rocketseat-education/ignite-reactjs-01-fundamentos-react) e [este](https://www.figma.com/community/file/1113573231685349036) é o link do Figma com o protótipo das telas.
 
