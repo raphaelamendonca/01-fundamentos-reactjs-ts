@@ -1,0 +1,48 @@
+:root {
+  --white: #fff;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #282824;
+  --gray-900: #121214;
+  --green-300: #00b37e;
+  --green-500: #00875f;
+  --red-500: #f75a68;
+}
+
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green-500);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gray-900);
+  color: var(--gray-300);
+  /*
+  aplica nos navegadores baseados no webkit uma padronização das fontes para que fiquem mais detalhadas e com uma melhor renderização, PORÉM de acordo com o artigo "Please Stop “Fixing” Font Smoothing" (http://bit.ly/40BFdq5) não é considerado mais uma boa prática e não deve, portanto, ser utilizado (e nem se faz mais necessário)
+  */
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+a declaração foi feita assim e não apenas no body, porque, por padrão, esses outros elementos (input, textarea e button) não herdam a customização do body (conforme feita na linha 20) e possuem sua própria customização de fonte
+*/
+body,
+input,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  /*
+  a utilização de unidades de medidas relativas melhora a acessibilidade da aplicação, já que caso o usuário configure o seu dispositivo para aumentar o tamanho da fonte (algo comum para idosos ou pessoas com baixa visão), a aplicação irá se comportar de acordo e adequará o seu conteúdo (ou ao menos todos os elementos que foram declarados utilizando unidades de medidas relativas)
+  */
+  font-size: 1rem;
+}

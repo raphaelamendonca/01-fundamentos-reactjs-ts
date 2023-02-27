@@ -1,0 +1,11 @@
+.header {
+  background: var(--gray-800);
+  display: flex;
+  justify-content: center;
+  /* não é necessário colocar o align-items, pois ao invés definir uma altura fixa, foi declarado um espaçamento vertical (1.25rem) e horizontal (0) */
+  padding: 1.25rem 0;
+}
+
+.header img {
+  height: 2rem;
+}

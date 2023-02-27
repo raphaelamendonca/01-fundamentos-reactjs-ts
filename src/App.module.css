@@ -1,0 +1,32 @@
+.wrapper {
+  /* 
+  esse valor foi obtido a partir do layout do Figma:
+  - os cards onde ficarão os posts feitos no feed possuem 832px de largura;
+  - a distância entre o card e a sidebar é de 32px;
+  - a sidebar possui 256px de largura;
+  - somando todos esses valores temos 1120px, que corresponde a 70rem (1120/16).
+  */
+  max-width: 70rem;
+  /* centraliza o elemento */
+  margin: 2rem auto;
+  /* garante que caso a tela seja diminuída para um tamanho menor do que 70rem o conteúdo não fique colado nas laterais e respeite o espaçamento de 16px */
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  gap: 2rem;
+  /*
+  faz com que a sidebar e os cards fiquem alinhados pelo topo. o comportamento padrão desta propriedade associada ao display: grid é tentar esticar os elementos para que tenham a mesma altura, sendo assim, a sidebar seria "esticada" para atingir o mesmo tamanho do card (que por si só é maior, já que contém mais informações)
+  */
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .wrapper {
+    /* o grid passa a ter uma única coluna que ocupa a largura toda, sendo assim a sidebar ficará acima do card em dispositivos móveis*/
+    grid-template-columns: 1fr;
+  }
+}
